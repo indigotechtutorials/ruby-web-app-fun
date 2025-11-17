@@ -18,10 +18,14 @@ File.readlines(routes_file, chomp: true).each do |line|
   when "root"
     "/"
   end
+  
   server.mount_proc served_url do |req, res|
     controller_class = Object.const_get("#{controller_name.capitalize}Controller")
     controller = controller_class.new(res)
+    controller.action_name = action_name
+    controller.controller_name = controller_name
     controller.send(action_name)
+    controller.render
   end
 end
 
