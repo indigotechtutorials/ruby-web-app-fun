@@ -2,7 +2,6 @@ require 'webrick'
 require 'pry'
 require_relative './splash_router'
 require_relative './waterfall_controller.rb'
-Dir[File.join('..', '..', 'app', 'controllers', '*.rb')].each { |file| require file }
 
 module Jetski
   class Server
