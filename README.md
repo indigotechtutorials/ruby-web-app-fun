@@ -1,4 +1,6 @@
-# A ruby web application built in minutes using Webrick server
+# A basic ruby web app using Jetski librry
+
+Originally this was an app using webrick for web server and I started mimicking rails patterns and it worked well I decided to create a gem called Jetksi which will be a new lightweight MVC framework for ruby I'm building
 
 This is pretty cool you can do this never knew it feels.
 
