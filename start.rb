@@ -1,3 +1,4 @@
-require_relative './lib/jetski/server.rb'
+require 'bundler/setup'
+require "jetski"
 
 Jetski::Server.new.call

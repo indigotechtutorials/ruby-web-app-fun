@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem "webrick"
 gem 'pry'
+gem 'jetski'
